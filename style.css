@@ -6,13 +6,13 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   background: #f2f2f2;
 }
 
 .header {
   display: block;
-  margin-top: 50px;
+  padding: 15px;
+
   background: rgba(190, 188, 188, 0.502);
   text-align: center;
 }
@@ -25,14 +25,15 @@ body {
   color: #44285e;
   font-family: "Playfair Display", serif;
   font-size: 2.5em;
-  padding: 20px 0;
+  padding: 40px;
+  margin-bottom: 20px;
 }
 nav {
   display: table;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .header {
     display: none;
   }
@@ -48,6 +49,11 @@ nav ul {
   display: table;
   clear: both;
 }
+
+.topmenu {
+  padding: 10px;
+}
+
 .topmenu > li {
   width: 25%;
   float: left;
@@ -59,10 +65,10 @@ nav ul {
   font-size: 14px;
   font-weight: bold;
   color: #404040;
-  padding: 15px 30px;
+  padding: 5px 30px;
 }
 .topmenu li a:hover {
-  color: #d5b45b;
+  color: #507dcb;
 }
 .submenu-link:after {
   content: "\f107";
@@ -71,12 +77,13 @@ nav ul {
   margin-left: 10px;
 }
 .submenu {
-  background: #273037;
+  background: #302737;
   position: absolute;
   left: 0;
   top: 100%;
   z-index: 5;
-  width: 180px;
+  width: 200px;
+  border-radius: 5px;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: 0 0;
@@ -85,8 +92,9 @@ nav ul {
 .submenu a {
   color: white;
   text-align: left;
-  padding: 12px 15px;
-  font-size: 13px;
+  margin: 35px;
+  padding: 0px 15px;
+  font-size: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .submenu li:last-child a {
@@ -101,6 +109,7 @@ nav ul {
 
 .navbar-burger {
   display: none;
+  padding: 10px;
 }
 
 @media screen and (max-width: 400px) {
@@ -298,9 +307,20 @@ body.open .menu a {
 
 .hero-title {
   padding: 15px;
-  font-size: 30px;
+  font-size: 40px;
 }
+
+.form-group {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
 .form-control {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;

@@ -71,7 +71,7 @@ nav ul {
   color: #507dcb;
 }
 .submenu-link:after {
-  content: "\f107";
+  content: "🚀";
   font-family: "FontAwesome";
   color: inherit;
   margin-left: 10px;
@@ -296,6 +296,15 @@ body.open .menu a {
 
   background-color: #404040;
   color: #f7f7f7;
+}
+
+.hero-btn:hover {
+  margin: 11px;
+  padding: 9px;
+  border-radius: 6px;
+
+  background-color: #313131;
+  color: #f9f3f3;
 }
 
 .tg {

@@ -5,11 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- nav -->
+
+    <!-- aside -->
+
     <section>
-      <form id="tg">
-        <legend>Заголовок формы</legend>
+      <button class="navbar-burger" onclick="toggleMenu()">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="menu">
+        <button class="btn" onclick="toggleMenu()">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <title>close</title>
+            <path
+              fill="#afb1b8"
+              d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+            ></path>
+          </svg>
+        </button>
+
+        <nav>
+          <a href="../example.html" style="animation-delay: 0.1s"> Back </a>
+          <a href="./gradient.html" style="animation-delay: 0.2s"> Gradient </a>
+          <a href="./html_tegs.html" style="animation-delay: 0.3s">
+            html tags
+          </a>
+          <a href="./Menu.html" style="animation-delay: 0.4s"> Menu </a>
+          <a href="./navExample.html" style="animation-delay: 0.5s"> Navs </a>
+          <a href="./social_dropdown_menu.html" style="animation-delay: 0.6s">
+            Social
+          </a>
+          <!-- more links -->
+        </nav>
+      </div>
+    </section>
+
+    <header class="header">
+      <a href="" class="logo">Наш супер пупер магаз</a>
+      <nav>
+        <ul class="topmenu">
+          <li><a href="">Главная</a></li>
+          <li>
+            <a href="" class="submenu-link">О нас</a>
+            <ul class="submenu">
+              <li><a href="">Производство</a></li>
+              <li><a href="">Магазин</a></li>
+              <li><a href="">Сервис</a></li>
+            </ul>
+          </li>
+          <li><a href="">Проекты</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- telegram form -->
+
+    <section class="hero">
+      <form id="tg" class="tg">
+        <legend class="hero-title">
+          Отправить заявку <br />
+          на консультацию
+        </legend>
 
         <div class="form-group">
           <input
@@ -18,23 +95,26 @@
             id=""
             name="name"
             placeholder="Введите имя"
+            required
           />
         </div>
 
         <div class="form-group">
           <input
-            type="text"
+            type="tel"
             class="form-control"
             id=""
             name="phone"
             placeholder="Введите телефон"
+            required
           />
         </div>
 
-        <button type="submit" class="btn">Отправить форму</button>
+        <button type="submit" class="hero-btn">Отправить форму</button>
       </form>
     </section>
 
+    <!-- telegram form -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
@@ -59,6 +139,11 @@
       });
     </script>
 
+    <!-- aside -->
+
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
     <!-- 
 <?php
 

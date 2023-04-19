@@ -340,7 +340,7 @@ body.open .menu a {
 
 /* ========== mobilka ========== */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 416px) {
   body {
     background-color: #5025764a;
     /* max-width: 800px; */
@@ -380,7 +380,7 @@ body.open .menu a {
 
 /* ==========tablet========== */
 
-@media screen and (min-width: 400px) and (max-width: 800px) {
+@media screen and (min-width: 417px) and (max-width: 768px) {
   body {
     background-color: #c1c6cd63;
     /* max-width: 800px; */

@@ -128,11 +128,13 @@
 
         console.log(message);
 
-        axios.post(URL, {
-          chat_id: CHAT_ID,
-          parse_mode: "html",
-          text: message,
-        });
+        axios
+          .post(URL, {
+            chat_id: CHAT_ID,
+            parse_mode: "html",
+            text: message,
+          })
+          .then(alert("Ваша заявка принята"));
       });
     </script>
 

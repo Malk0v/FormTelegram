@@ -119,7 +119,9 @@
       const CHAT_ID = "-1001863675273";
       const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-      document.getElementById("tg").addEventListener("submit", function (e) {
+      const tg = document.getElementById("tg");
+
+      tg.addEventListener("submit", function (e) {
         e.preventDefault();
 
         let message = `<b> Заявка с сайта! </b>\n`;
@@ -135,6 +137,9 @@
             text: message,
           })
           .then(alert("Ваша заявка принята"));
+
+        tg.name.value = "";
+        tg.phone.value = "";
       });
     </script>
 

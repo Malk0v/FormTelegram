@@ -8,27 +8,11 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- nav -->
-
     <!-- aside -->
 
     <section>
-      <button class="navbar-burger" onclick="toggleMenu()">
-        <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-        >
-          <path
-            d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
-          ></path>
-        </svg>
-      </button>
-
-      <div class="menu">
-        <button class="btn" onclick="toggleMenu()">
+      <nav class="top-nav">
+        <button class="navbar-burger" onclick="toggleMenu()">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -36,37 +20,50 @@
             height="32"
             viewBox="0 0 32 32"
           >
-            <title>close</title>
             <path
-              fill="#afb1b8"
-              d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+              d="M12 26h20v4h-20zM12 14h20v4h-20zM12 2h20v4h-20zM6 0v8h-2v-6h-2v-2zM4 16.438v1.563h4v2h-6v-4.563l4-1.875v-1.563h-4v-2h6v4.563zM8 22v10h-6v-2h4v-2h-4v-2h4v-2h-4v-2z"
             ></path>
           </svg>
         </button>
 
-        <nav>
-          <a href="../example.html" style="animation-delay: 0.1s"> Back </a>
-          <a href="./gradient.html" style="animation-delay: 0.2s"> Gradient </a>
-          <a href="./html_tegs.html" style="animation-delay: 0.3s">
-            html tags
-          </a>
-          <a href="./Menu.html" style="animation-delay: 0.4s"> Menu </a>
-          <a href="./navExample.html" style="animation-delay: 0.5s"> Navs </a>
-          <a href="./social_dropdown_menu.html" style="animation-delay: 0.6s">
-            Social
-          </a>
-          <!-- more links -->
-        </nav>
-      </div>
+        <div class="menu">
+          <button class="btn" onclick="toggleMenu()">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <title>close</title>
+              <path
+                fill="#afb1b8"
+                d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"
+              ></path>
+            </svg>
+          </button>
+
+          <nav>
+            <a href="" style="animation-delay: 0.2s"> 👓 </a>
+            <a href="" style="animation-delay: 0.4s"> 👕 </a>
+            <a href="" style="animation-delay: 0.5s"> 👖 </a>
+            <a href="" style="animation-delay: 0.6s"> 🥾 </a>
+          </nav>
+        </div>
+
+        <p class="logo-mob">👓</p>
+      </nav>
     </section>
 
+    <!-- nav -->
+
     <header class="header">
-      <a href="" class="logo">Наш супер пупер магаз</a>
+      <a href="" class="logo">Наш супер пупер магаз 👓</a>
       <nav>
         <ul class="topmenu">
           <li><a href="">Главная</a></li>
           <li>
-            <a href="" class="submenu-link">О нас</a>
+            <a href="" class="submenu-link">О нас 🚀</a>
             <ul class="submenu">
               <li><a href="">Производство</a></li>
               <li><a href="">Магазин</a></li>

@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   max-width: 1200px;
   margin-left: auto;
@@ -28,15 +29,14 @@ body {
   padding: 40px;
   margin-bottom: 20px;
 }
+
+.logo-mob {
+  display: none;
+}
+
 nav {
   display: table;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 400px) {
-  .header {
-    display: none;
-  }
 }
 
 nav ul {
@@ -51,11 +51,13 @@ nav ul {
 }
 
 .topmenu {
+  display: flex;
+  justify-content: space-around;
   padding: 10px;
 }
 
 .topmenu > li {
-  width: 25%;
+  width: 20%;
   float: left;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -67,11 +69,12 @@ nav ul {
   color: #404040;
   padding: 5px 30px;
 }
+
 .topmenu li a:hover {
   color: #507dcb;
 }
 .submenu-link:after {
-  content: "🚀";
+  content: "";
   font-family: "FontAwesome";
   color: inherit;
   margin-left: 10px;
@@ -110,12 +113,6 @@ nav ul {
 .navbar-burger {
   display: none;
   padding: 10px;
-}
-
-@media screen and (max-width: 400px) {
-  .navbar-burger {
-    display: block;
-  }
 }
 
 .btn {
@@ -277,7 +274,7 @@ body.open .menu a {
         rgba(171, 120, 219, 0.711) 39%,
         rgb(23, 44, 48) 96%
       )
-      center center / 400px 200px no-repeat,
+      top center / 400px 200px no-repeat,
     url(./image/1648098066_4-gamerwall-pro-p-trendovie-foni-krasivie-5.png)
       center no-repeat,
     rgb(58, 38, 79);
@@ -321,9 +318,13 @@ body.open .menu a {
 
 .form-group {
   display: flex;
-  width: 30%;
+  width: 45%;
   align-items: center;
   justify-content: center;
+}
+
+.hero-title {
+  font-size: 20px;
 }
 
 .form-control {
@@ -335,4 +336,77 @@ body.open .menu a {
   border-radius: 5px;
   border-color: #6e7a8471;
   background-color: #efe8f8e0;
+}
+
+/* ========== mobilka ========== */
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: #5025764a;
+    /* max-width: 800px; */
+  }
+
+  .form-group {
+    width: 70%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: inline-block;
+  }
+
+  .logo {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-mob {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* ==========tablet========== */
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  body {
+    background-color: #c1c6cd63;
+    /* max-width: 800px; */
+  }
+
+  .header {
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  .topmenu > li {
+    width: 100px;
+    float: left;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+  }
+  .topmenu > li > a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .form-group {
+    width: 70%;
+  }
 }

@@ -1,10 +1,11 @@
 /* styles for nav  */
 * {
   box-sizing: border-box;
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+}
+
+* ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 .header {
   display: block;
-  padding: 15px;
+  padding: 10px;
 
   background: rgba(190, 188, 188, 0.502);
   text-align: center;
@@ -55,22 +56,22 @@ nav ul {
 }
 
 .topmenu {
+  width: 130%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px;
 }
 
 .topmenu > li {
-  width: 20%;
+  width: 15%;
   float: left;
   position: relative;
   font-family: "Open Sans", sans-serif;
 }
 .topmenu > li > a {
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 18px;
   color: #404040;
   padding: 5px 30px;
 }
@@ -156,9 +157,9 @@ button {
   left: 0;
   display: grid;
   place-items: center;
-  width: 400px;
+  width: 100%;
   height: 100%;
-  background: #1a0827;
+  background: #1d052d84;
   translate: -100% 0;
   transition: translate 0.375s cubic-beziert (0.175, 0.885, 0.32, 1);
 }
@@ -381,7 +382,7 @@ body.open .menu a {
 .info {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   list-style: none;
   justify-content: space-around;
@@ -390,13 +391,14 @@ body.open .menu a {
 }
 
 .info > li {
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin: 10px;
   padding: 15px;
+  color: #44285e;
   font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 1px rgba(128, 128, 128, 0.434);
   font-style: italic;
-
-  /* outline: 1px solid red; */
 }
 
 /* ========== mobilka ========== */
@@ -439,14 +441,19 @@ body.open .menu a {
   }
 
   .info {
-    text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .info > li {
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
+    display: block;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    align-items: baseline;
+    box-shadow: 2px 2px 50px 1px rgba(128, 128, 128, 0.434);
   }
 
   .type-glass {
@@ -515,9 +522,21 @@ body.open .menu a {
 
   .info {
     display: block;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+  }
+
+  .info > li {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    /* outline: 1px double grey; */
+    border-radius: 10px;
+    font-size: 15px;
+    align-items: baseline;
+    box-shadow: 2px 2px 50px 1px rgba(128, 128, 128, 0.434);
   }
 
   .type-glass {

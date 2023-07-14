@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- aside -->
 
+    <!-- aside -->
     <section>
       <nav class="top-nav">
         <button class="navbar-burger" onclick="toggleMenu()">
@@ -60,12 +60,11 @@
     </section>
 
     <!-- nav -->
-
     <header class="header">
       <a href="" class="logo">Онлайн оптика 👓</a>
       <nav>
         <ul class="topmenu">
-          <li><a href="">Главная</a></li>
+          <!-- <li><a href="">Главная</a></li> -->
           <li>
             <a href="" class="submenu-link">О нас 🚀</a>
             <ul class="submenu">
@@ -76,14 +75,13 @@
           </li>
           <li><a href="#dioptre">Диоптрия</a></li>
           <li><a href="#photochrom">Фотохром</a></li>
-          <li><a href="#sunglasses">Солнцезащитные</a></li>
+          <li><a href="#sunglasses">Солнце</a></li>
           <li><a href="#anti">Антифара</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- telegram form block hero-->
-
     <section class="hero">
       <form id="tg" class="tg">
         <legend class="hero-title">
@@ -121,19 +119,19 @@
 
     <section>
       <ul class="info">
-        <li>Доступные цены</li>
-        <li>Гарантия качества</li>
-        <li>Быстрая обработка заказов</li>
-        <li>Консультация</li>
+        <li><img src="./image/cart.png" alt="cart" width="20px"> Доступные цены </li>
+        <li><img src="./image/checkbox-checked.png" alt="done" width="20px"> Гарантия качества </li>
+        <li> <img src="./image/stopwatch.png" alt="stopwatch" width="20px"> Быстрая обработка заказов </li>
+        <li><img src="./image/bubbles4.png" alt="help" width="20px"> Консультация  </li>
       </ul>
     </section>
 
     <!-- products  -->
+    <section>
 
-    <section id="dioptre">
+      <!-- dioptre -->
       <h3 class="type-glass">Диоптрийная оптика</h3>
-
-      <div class="products">
+      <div class="products" id="dioptre">
         <div class="products-item">
           <h4>Изюмская оптика 👓</h4>
           <img src="./image/diopria.jpeg" alt="products" />
@@ -153,9 +151,9 @@
         </div>
       </div>
 
-      <section id="photochrom">
-        <h3 class="type-glass">Фотохромная оптика</h3>
-
+      <!-- photochrom -->
+      <h3 class="type-glass">Фотохромная оптика</h3>
+      <div id="photochrom">
         <div class="products">
           <div class="products-item">
             <h4>Изюмская оптика 👓</h4>
@@ -193,11 +191,11 @@
             <p>Цена 250 грн</p>
           </div>
         </div>
-      </section>
+      <div/>
 
-      <section id="anti">
-        <h3 class="type-glass">Анти фара</h3>
-
+      <!-- anti -->
+      <h3 class="type-glass">Анти фара</h3>
+      <div id="anti">
         <div class="products">
           <div class="products-item">
             <h4>Изюмская оптика 👓</h4>
@@ -223,11 +221,11 @@
             <p>Цена 250 грн</p>
           </div>
         </div>
-      </section>
+      <div/>
 
-      <section id="sunglasses">
-        <h3 class="type-glass">Солнцезащитная оптика</h3>
-
+      <!-- sunglasses -->
+      <h3 class="type-glass">Солнцезащитная оптика</h3>
+      <div id="sunglasses">
         <div class="products">
           <div class="products-item">
             <h4>reibon 👓</h4>
@@ -253,11 +251,10 @@
             <p>Цена 250 грн</p>
           </div>
         </div>
-      </section>
+      <div/>
     </section>
 
     <!-- footer -->
-
     <footer class="footer">
       <div class="footer-2">
         <!-- лого,адресс,почта,телефон -->
@@ -368,11 +365,9 @@
     </footer>
 
     <!-- cdn axios -->
-
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- telegram form -->
-
     <script>
       const TOKEN = "6118003524:AAHjYaqFCkQEhg4QEwX4PBp6iGMR2q0uJjw";
       const CHAT_ID = "-1001863675273";
@@ -404,7 +399,6 @@
     </script>
 
     <!-- aside -->
-
     <script type="text/javascript">
       const toggleMenu = () => document.body.classList.toggle("open");
     </script>

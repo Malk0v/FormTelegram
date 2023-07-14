@@ -350,6 +350,13 @@ body.open .menu a {
   padding: 4%;
 }
 
+.type-glass {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+}
+
 .products-item {
   width: auto;
   margin: 10px;
@@ -396,7 +403,7 @@ body.open .menu a {
 
 @media screen and (max-width: 416px) {
   body {
-    background-color: #f9f6fd;
+    background-color: #ffffff;
     /* max-width: 800px; */
   }
 
@@ -440,6 +447,13 @@ body.open .menu a {
     padding: 0;
     margin: 0;
     font-size: 15px;
+  }
+
+  .type-glass {
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
   }
 
   .products {
@@ -504,6 +518,13 @@ body.open .menu a {
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+  }
+
+  .type-glass {
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 30px;
   }
 
   .products {

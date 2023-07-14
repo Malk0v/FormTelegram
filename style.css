@@ -396,7 +396,7 @@ body.open .menu a {
 
 @media screen and (max-width: 416px) {
   body {
-    background-color: #5025764a;
+    background-color: #f9f6fd;
     /* max-width: 800px; */
   }
 
@@ -432,11 +432,14 @@ body.open .menu a {
   }
 
   .info {
+    text-align: center;
     display: block;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 10px;
+  }
+
+  .info > li {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
   }
 
   .products {
@@ -446,7 +449,7 @@ body.open .menu a {
 
   .products-item {
     max-width: 140px;
-    background-color: #f1f3f4;
+    background-color: #ffffff;
   }
 
   .products-item > img {
@@ -468,7 +471,7 @@ body.open .menu a {
 
 @media screen and (min-width: 417px) and (max-width: 768px) {
   body {
-    background-color: #c1c6cd63;
+    background-color: #dee2e7cf;
     /* max-width: 800px; */
   }
 
@@ -789,7 +792,7 @@ body.open .menu a {
 }
 
 .wrapper-send button:hover {
-  background-color: #2f303a;
+  background-color: #9193aa;
   color: #2196f3;
   -webkit-transition: all 0.7s ease 0s;
   transition: all 0.7s ease 0s;
@@ -811,4 +814,8 @@ body.open .menu a {
   fill: currentColor;
   -webkit-transition: all 0.7s ease 0s;
   transition: all 0.7s ease 0s;
+}
+
+.word-web {
+  color: #188ce8;
 }

@@ -38,25 +38,25 @@ body {
 .logo-mob {
   display: none;
 }
-
+/* 
 nav {
   display: table;
   margin: 0 auto;
-}
+} */
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.topmenu:after {
+/* .topmenu:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .topmenu {
-  width: 130%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

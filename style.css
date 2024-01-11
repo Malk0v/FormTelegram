@@ -47,22 +47,22 @@ body {
 .logo-mob {
   display: none;
 }
-/* 
+
 nav {
   display: table;
   margin: 0 auto;
-} */
+}
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* .topmenu:after {
+.topmenu:after {
   content: "";
   display: table;
   clear: both;
-} */
+}
 
 .topmenu {
   width: 100%;
@@ -142,6 +142,7 @@ button {
   background: transparent;
   cursor: pointer;
 }
+
 */ .burger {
   z-index: 3;
   top: 0;
